@@ -1,0 +1,35 @@
+/*таблица со статистикой*/
+.table-frame {
+    border: 1px solid black;
+    padding: 10px;
+    width: fit-content;
+    margin: 0;
+    text-align: left;
+    height: auto;
+}
+/* для центрирования */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    background-image: url('shattle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h4, h5 {
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Черная окантовка */
+}
+
+/* Стиль для формы и инпутов */
+form {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}

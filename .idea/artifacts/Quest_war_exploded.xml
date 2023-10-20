@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Quest:war exploded">
+    <output-path>$PROJECT_DIR$/unnamed</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/../../DevPrograms/apache-tomcat-10.1.13" />
+      <element id="module-output" name="project-maven" />
+    </root>
+  </artifact>
+</component>
