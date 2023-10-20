@@ -1,0 +1,40 @@
+
+/*таблица со статистикой*/
+.table-frame {
+    border: 1px #8888bb;
+    padding: 10px;
+    width: fit-content;
+    margin: 0;
+    text-align: left;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+/* для центрирования */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    /*background-image: url('hogwarts.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Стиль для формы и инпутов */
+form {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
