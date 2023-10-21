@@ -6,10 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Хогвартс - игра</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
-<body style="background-image: url('hogwarts.jpg');">
+<body class="centered" style="background-image: url('hogwarts.jpg');">
 <h1>Приветствие</h1>
 <h2>Добро пожаловать в увлекательный мир Хогвартса - школы магии и волшебства!</h2>
 <h2> Здесь вас ждут удивительные приключения и загадочные уроки.</h2>
@@ -33,10 +32,9 @@
         <option value="Рэвенкло">Рэвенкло</option>
         <option value="Слизерин">Слизерин</option>
     </select>
-    <input type="submit" value="Представиться">
+
+    <input type="submit" class="btn btn-success" value="Представиться">
 </form>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
 </body>
 </html>

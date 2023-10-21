@@ -12,6 +12,7 @@ import java.io.IOException;
 public class HomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
         String username = req.getParameter("username");
 
         if (username != null && !username.trim().isEmpty()) {
@@ -19,7 +20,7 @@ public class HomeServlet extends HttpServlet {
             req.getSession().setAttribute("username", username);
 
             Integer games = (Integer) session.getAttribute("numberOfGames");
-            if (games == null) {
+            if (games == null && username != null) {
                 games = 1;
                 session.setAttribute("numberOfGames", games);
             }else {

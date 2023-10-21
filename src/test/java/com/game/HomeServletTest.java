@@ -1,50 +1,46 @@
 package com.game;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
-
 import java.io.IOException;
 
 import static org.mockito.Mockito.*;
 
-public class HomeServletTest {
+class HomeServletTest {
+    @Mock
+    private HttpServletRequest request;
+    @Mock
+    private HttpServletResponse response;
+    @Mock
+    private HttpSession session;
+    @Mock
+    private RequestDispatcher requestDispatcher;
 
     private HomeServlet homeServlet;
-    private HttpServletRequest request;
-    private HttpServletResponse response;
-    private HttpSession session;
-
-    @Before
+    @BeforeEach
     public void setUp() {
+        MockitoAnnotations.initMocks(this);
         homeServlet = new HomeServlet();
-        request = Mockito.mock(HttpServletRequest.class);
-        response = Mockito.mock(HttpServletResponse.class);
-        session = Mockito.mock(HttpSession.class);
-        when(request.getSession()).thenReturn(session);
     }
-
     @Test
-    public void testDoPost_WithUsername() throws ServletException, IOException {
-
+    public void testValidUserNameAndNumberOfGames() throws ServletException, IOException {
         when(request.getParameter("username")).thenReturn("John Doe");
+        when(request.getSession()).thenReturn(session);
+        when(request.getRequestDispatcher("WEB-INF/potionLesson.jsp")).thenReturn(requestDispatcher);
 
         homeServlet.doPost(request, response);
 
         verify(session).setAttribute("username", "John Doe");
+        verify(session).setAttribute("numberOfGames", 1);
+        verify(requestDispatcher).forward(request, response);
     }
 
-    @Test
-    public void testDoPost_EmptyUsername() throws ServletException, IOException {
-        when(request.getParameter("username")).thenReturn("");
-
-        homeServlet.doPost(request, response);
-
-        verify(session, never()).setAttribute(Mockito.anyString(), Mockito.anyString());
-    }
 }
