@@ -25,15 +25,16 @@ Text Quest: Урок зельеварения в Хогвартсе — это �
 
 1. Клонируйте репозиторий:
 
-   git clone https://github.com/yourusername/hogwarts-potions-quest.git
+   git clone [https://github.com/yourusername/hogwarts-potions-quest.git](https://github.com/BlackFireMK/TextQuest.git)
+   
    cd hogwarts-potions-quest
 
-2. Соберите проект:
+3. Соберите проект:
    Убедитесь, что у вас установлен Maven, затем выполните команду:
 
    mvn clean install
 
-3. Запустите на Tomcat 10:
+4. Запустите на Tomcat 10:
    - Разверните WAR файл в папке webapps вашего сервера Tomcat.
    - Запустите Tomcat и перейдите по следующему адресу в браузере: http://localhost:8080/hogwarts-potions-quest.
 
@@ -68,16 +69,17 @@ In this game, you will create a character, prepare for a potions class, and answ
 
 1. Clone the Repository:
 
-   git clone https://github.com/yourusername/hogwarts-potions-quest.git
+   git clone [https://github.com/yourusername/hogwarts-potions-quest.git](https://github.com/BlackFireMK/TextQuest.git)
+   
    cd hogwarts-potions-quest
 
 
-2. **Build the Project**:
+3. **Build the Project**:
    Ensure that Maven is installed, then run:
    ```bash
    mvn clean install
 
-3. Run on Tomcat 10:
+4. Run on Tomcat 10:
    - Deploy the WAR file to the webapps folder of your Tomcat server.
    - Start Tomcat and navigate to http://localhost:8080/hogwarts-potions-quest in your web browser.
 
