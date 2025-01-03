@@ -34,7 +34,7 @@ Text Quest: Урок зельеварения в Хогвартсе — это �
 
    mvn clean install
 
-4. Запустите на Tomcat 10:
+4. Запустите на Tomcat:
    - Разверните WAR файл в папке webapps вашего сервера Tomcat.
    - Запустите Tomcat и перейдите по следующему адресу в браузере: http://localhost:8080/hogwarts-potions-quest.
 
@@ -79,7 +79,7 @@ In this game, you will create a character, prepare for a potions class, and answ
    ```bash
    mvn clean install
 
-4. Run on Tomcat 10:
+4. Run on Tomcat:
    - Deploy the WAR file to the webapps folder of your Tomcat server.
    - Start Tomcat and navigate to http://localhost:8080/hogwarts-potions-quest in your web browser.
 
